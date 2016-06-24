@@ -14,14 +14,20 @@ public class Migrante {
     String nombre;
     String edad;
     String fechaSolicitud;
-
-    public Migrante(String cedula, String nombre, String edad, String fechaSolicitud) {
+    String prioridad;
+    public Migrante(String cedula, String nombre, String edad, String fechaSolicitud,String prioridad) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.edad = edad;
         this.fechaSolicitud = fechaSolicitud;
+        this.prioridad = prioridad;
     }
 
+    public String getPrioridad() {
+        return prioridad;
+    }
+
+    
     public String getCedula() {
         return cedula;
     }
@@ -46,14 +52,17 @@ public class Migrante {
         this.nombre = nombre;
     }
 
+    public void setPrioridad(String prioridad) {
+        this.prioridad = prioridad;
+    }
+
+    
     public void setEdad(String edad) {
         this.edad = edad;
     }
 
     public void setFechaSolicitud(String fechaSolicitud) {
         this.fechaSolicitud = fechaSolicitud;
-    }
-    
-    
-    
+    }   
+   
 }
